@@ -1,0 +1,14 @@
+<!doctype html>
+<body>
+<script>
+  with (document.body.style) {
+    backgroundColor = 'rgb(22, 22, 22)'
+    setTimeout(() => transition = 'background-color 1800s')
+    setInterval(() => {
+      date = new Date
+      if (date.getHours() != 6) return
+      if (date.getMinutes() != 30) return
+      backgroundColor = 'rgb(255, 234, 210)'
+    }, 1000)
+  }
+</script>
